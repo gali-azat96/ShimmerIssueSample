@@ -1,0 +1,31 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not setted Layer type flag"
+            android:textSize="18sp" />
+
+        <include
+            android:id="@+id/shimmer_without_flag"
+            layout="@layout/merge_shimmer_layout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAYER_TYPE_SOFTWARE"
+            android:textSize="18sp" />
+        <include
+            android:id="@+id/shimmer_software_layer"
+            layout="@layout/merge_shimmer_layout" />
+    </LinearLayout>
+</ScrollView>
